@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 public class AutomationTableTest extends BaseTest {
@@ -12,20 +13,17 @@ public class AutomationTableTest extends BaseTest {
     @Test
     public void selectWholeTableTest() {
         driver.get("http://toolsqa.com/automation-practice-table/");
-
         WebElement table = driver.findElement(By.cssSelector("table[class='tsc_table_s13']"));
-
         List<WebElement> rows = table.findElements(By.cssSelector("tbody tr"));
         System.out.println("number of rows in table: " + rows.size());
         int rowIndex = 1;
         for (WebElement rowElement : rows) {
-
             List<WebElement> rowElements = rowElement.findElements(By.cssSelector("td"));
+            WebElement structureElement=rowElement.findElement(By. cssSelector("th[scope='row']"));
             System.out.println("\n" + "Row " + rowIndex);
-
-            for (WebElement colElement : rowElements) {
-                System.out.println(colElement.getText());
-
+            System.out.println(structureElement.getText());
+            for (WebElement element : rowElements) {
+                System.out.println(element.getText());
             }
             rowIndex += 1;
         }
@@ -38,11 +36,9 @@ public class AutomationTableTest extends BaseTest {
         List<WebElement> rowsList = table.findElements(By.cssSelector("tbody tr"));
         // Table object list
         List<Table> tableLists = new ArrayList<Table>();
-
         for (WebElement rowElement: rowsList) {
             tableLists.add(new Table(rowElement));
         }
-
         for (Table element:tableLists) {
             element.printTable();
         }
@@ -50,22 +46,50 @@ public class AutomationTableTest extends BaseTest {
         Assert.assertEquals(tableLists.get(1).getRank(),2);
     }
 
-    // nie wiem dlaczego nie wypisuje tej komórki z tabeli
+// pomimo,że w innym teście nie występuje, to tutaj jest błąd:
+    //Unable to locate element: {"method":"css selector","selector":"table[class='tsc_table_s13']"}
+    @Test
+    public void printHeightTest() {
+        Random random = new Random();
+        int low = 400;
+        int high = 800;
+        int randomHeight = random.nextInt(high - low) + low;
+
+        driver.get("http://toolsqa.com/automation-practice-form/");
+        WebElement table = driver.findElement(By.cssSelector("table[class='tsc_table_s13']"));
+        List<WebElement> rows = table.findElements(By.cssSelector("tbody tr"));
+        int rowIndex = 1;
+        for (WebElement rowElement : rows) {
+            List<WebElement> rowElements = rowElement.findElements(By.cssSelector("td"));
+            WebElement structureElement = rowElement.findElement(By.cssSelector("th[scope='row']"));
+            System.out.println("\n" + "Row " + rowIndex);
+            System.out.println(structureElement.getText());
+
+            String[] heightString=  rowElements.get(2).getText().split("m");
+            int heightInt = Integer.parseInt(heightString[0]);
+            if (heightInt>randomHeight){
+                for (WebElement element : rowElements) {
+                //split np.829m
+                    System.out.println(element.getText());
+                }
+            }
+            rowIndex += 1;
+        }
+    }
+
+
     @Test
     public void selectOneCellTest() {
         driver.get("http://toolsqa.com/automation-practice-table/");
-
         WebElement table = driver.findElement(By.cssSelector("table[class='tsc_table_s13']"));
         List<WebElement> rows = table.findElements(By.cssSelector("tbody tr"));
-        System.out.println("number of rows in table: " + rows.size());
-
         for (WebElement rowElement : rows) {
             List<WebElement> singleElements = rowElement.findElements(By.cssSelector("td"));
             for (WebElement element : singleElements) {
                 element.getText();
                 if (element.getText().equals("Clock Tower Hotel")) {
                     WebElement searchedElement = element.findElement(By.xpath("//th[contains(text(),'Clock Tower Hotel')]"));
-                    System.out.println(searchedElement.getText());
+                    Assert.assertEquals(searchedElement.getText(),"Clock Tower Hotel");
                 }
             }
         }

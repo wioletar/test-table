@@ -27,7 +27,7 @@ public class Table {
     }
 
     public void printTable(){
-        System.out.println(structure+" "+country+" "+city+" "+height+" "+built+" "+rank);
+        System.out.println(structure+", "+country+", "+city+", "+height+", "+built+", "+rank);
     }
     public String getStructure() {
         return structure;
