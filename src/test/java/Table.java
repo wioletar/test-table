@@ -8,7 +8,7 @@ public class Table {
     private String structure;
     private String country;
     private String city;
-    private String height;
+    private int height;
     private int built;
     private int rank;
 
@@ -21,7 +21,7 @@ public class Table {
         List<WebElement> tds = tr.findElements(By.cssSelector("td"));
         this.country = tds.get(0).getText();
         this.city = tds.get(1).getText();
-        this.height = tds.get(2).getText();
+        this.height = Integer.parseInt(tds.get(2).getText().substring(0,3));
         this.built = Integer.parseInt(tds.get(3).getText());
         this.rank = Integer.parseInt(tds.get(4).getText());
     }
@@ -53,11 +53,11 @@ public class Table {
         this.city = city;
     }
 
-    public String getHeight() {
+    public int getHeight() {
         return height;
     }
 
-    public void setHeight(String height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 

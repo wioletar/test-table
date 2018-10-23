@@ -42,7 +42,7 @@ public class AutomationTableTest extends BaseTest {
         for (Table element:tableLists) {
             element.printTable();
         }
-        Assert.assertEquals(tableLists.get(0).getHeight(),"829m");
+        Assert.assertEquals(tableLists.get(0).getHeight(),829);
         Assert.assertEquals(tableLists.get(1).getRank(),2);
     }
 
@@ -54,27 +54,23 @@ public class AutomationTableTest extends BaseTest {
         int low = 400;
         int high = 800;
         int randomHeight = random.nextInt(high - low) + low;
+        System.out.println(randomHeight);
 
-        driver.get("http://toolsqa.com/automation-practice-form/");
+        driver.get("http://toolsqa.com/automation-practice-table/");
         WebElement table = driver.findElement(By.cssSelector("table[class='tsc_table_s13']"));
         List<WebElement> rows = table.findElements(By.cssSelector("tbody tr"));
-        int rowIndex = 1;
-        for (WebElement rowElement : rows) {
-            List<WebElement> rowElements = rowElement.findElements(By.cssSelector("td"));
-            WebElement structureElement = rowElement.findElement(By.cssSelector("th[scope='row']"));
-            System.out.println("\n" + "Row " + rowIndex);
-            System.out.println(structureElement.getText());
-
-            String[] heightString=  rowElements.get(2).getText().split("m");
-            int heightInt = Integer.parseInt(heightString[0]);
-            if (heightInt>randomHeight){
-                for (WebElement element : rowElements) {
-                //split np.829m
-                    System.out.println(element.getText());
-                }
-            }
-            rowIndex += 1;
+        List<Table> tableLists = new ArrayList<Table>();
+        for (WebElement rowElement: rows) {
+            tableLists.add(new Table(rowElement));
         }
+
+        for(int i = 0; i < tableLists.size(); i++){
+            int height = tableLists.get(i).getHeight();
+            if(height > randomHeight){
+                System.out.println(tableLists.get(i).getStructure());
+            }
+        }
+
     }
 
 

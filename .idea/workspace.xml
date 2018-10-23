@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efcacf8e-fc9f-4e47-b4cd-01576bbf744f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Alerts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SwitchWindows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AutomationTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomationTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Table.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,42 +61,46 @@
     <session id="1693075238">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="429" />
+          <entry key="java" value="1272" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="429" />
+          <entry key="JAVA" value="1272" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="class" value="3" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AutomationTableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="49" column="99" selection-start-line="49" selection-start-column="99" selection-end-line="49" selection-end-column="99" />
+            <state relative-caret-position="782">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,10 +109,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FormTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SwitchWindows.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Alerts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/By.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="e#1407#1408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/FormPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/TableTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,12 +201,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="680">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,9 +236,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Buildings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Table.java" />
         <option value="$PROJECT_DIR$/src/test/java/AutomationTableTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FormTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SwitchWindows.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Alerts.java" />
       </list>
     </option>
   </component>
@@ -161,10 +254,13 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="922" />
-    <option name="y" value="197" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,6 +268,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,6 +280,34 @@
               <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
               <item name="test-table" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test-table" type="b2602c69:ProjectViewProjectNode" />
@@ -201,12 +326,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540127400441" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test-jquery" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540302024998" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjektyOdGrupy/ToolsQASelenium" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,24 +344,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AutomationTableTest.printHeightTest">
-    <configuration name="AutomationTableTest.createObjectFromTableTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PractiseAutomationTable" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationTableTest" />
-      <option name="METHOD_NAME" value="createObjectFromTableTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutomationTableTest.printHeightTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Alerts.confirmAlertTest">
+    <configuration name="Alerts.confirmAlertTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PracticeAutomationForm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationTableTest" />
-      <option name="METHOD_NAME" value="printHeightTest" />
+      <option name="MAIN_CLASS_NAME" value="Alerts" />
+      <option name="METHOD_NAME" value="confirmAlertTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -245,35 +357,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutomationTableTest.selectOneCellTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PractiseAutomationTable" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationTableTest" />
-      <option name="METHOD_NAME" value="selectOneCellTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutomationTableTest.selectTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PractiseAutomationTable" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationTableTest" />
-      <option name="METHOD_NAME" value="selectTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutomationTableTest.selectWholeTableTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Alerts.simpleAlertTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PracticeAutomationForm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationTableTest" />
-      <option name="METHOD_NAME" value="selectWholeTableTest" />
+      <option name="MAIN_CLASS_NAME" value="Alerts" />
+      <option name="METHOD_NAME" value="simpleAlertTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchWindows.iFrameTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PracticeAutomationForm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SwitchWindows" />
+      <option name="METHOD_NAME" value="iFrameTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchWindows.newBrowserTabTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PracticeAutomationForm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SwitchWindows" />
+      <option name="METHOD_NAME" value="newBrowserTabTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchWindows.newMessageWindowTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PracticeAutomationForm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SwitchWindows" />
+      <option name="METHOD_NAME" value="newMessageWindowTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -282,19 +406,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.AutomationTableTest.selectTest" />
-      <item itemvalue="TestNG.AutomationTableTest.selectOneCellTest" />
-      <item itemvalue="TestNG.AutomationTableTest.createObjectFromTableTest" />
-      <item itemvalue="TestNG.AutomationTableTest.selectWholeTableTest" />
-      <item itemvalue="TestNG.AutomationTableTest.printHeightTest" />
+      <item itemvalue="TestNG.SwitchWindows.newBrowserTabTest" />
+      <item itemvalue="TestNG.SwitchWindows.newMessageWindowTest" />
+      <item itemvalue="TestNG.SwitchWindows.iFrameTest" />
+      <item itemvalue="TestNG.Alerts.simpleAlertTest" />
+      <item itemvalue="TestNG.Alerts.confirmAlertTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AutomationTableTest.printHeightTest" />
-        <item itemvalue="TestNG.AutomationTableTest.createObjectFromTableTest" />
-        <item itemvalue="TestNG.AutomationTableTest.selectWholeTableTest" />
-        <item itemvalue="TestNG.AutomationTableTest.selectOneCellTest" />
-        <item itemvalue="TestNG.AutomationTableTest.selectTest" />
+        <item itemvalue="TestNG.Alerts.confirmAlertTest" />
+        <item itemvalue="TestNG.Alerts.simpleAlertTest" />
+        <item itemvalue="TestNG.SwitchWindows.iFrameTest" />
+        <item itemvalue="TestNG.SwitchWindows.newBrowserTabTest" />
+        <item itemvalue="TestNG.SwitchWindows.newMessageWindowTest" />
       </list>
     </recent_temporary>
   </component>
@@ -312,42 +436,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutomationTableTest_createObjectFromTableTest - 2018.10.21 at 13h 51m 24s.xml">
-      <configuration name="AutomationTableTest.createObjectFromTableTest" configurationId="TestNG" />
+    <history-entry file="SwitchWindows_iFrameTest - 2018.10.23 at 14h 06m 52s.xml">
+      <configuration name="SwitchWindows.iFrameTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_createObjectFromTableTest - 2018.10.21 at 13h 55m 25s.xml">
-      <configuration name="AutomationTableTest.createObjectFromTableTest" configurationId="TestNG" />
+    <history-entry file="SwitchWindows_iFrameTest - 2018.10.23 at 14h 50m 31s.xml">
+      <configuration name="SwitchWindows.iFrameTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_selectWholeTableTest - 2018.10.21 at 14h 07m 12s.xml">
-      <configuration name="AutomationTableTest.selectWholeTableTest" configurationId="TestNG" />
+    <history-entry file="SwitchWindows_iFrameTest - 2018.10.23 at 14h 55m 56s.xml">
+      <configuration name="SwitchWindows.iFrameTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_printHeightTest - 2018.10.21 at 14h 57m 59s.xml">
-      <configuration name="AutomationTableTest.printHeightTest" configurationId="TestNG" />
+    <history-entry file="SwitchWindows_iFrameTest - 2018.10.23 at 15h 12m 52s.xml">
+      <configuration name="SwitchWindows.iFrameTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_createObjectFromTableTest - 2018.10.21 at 14h 59m 29s.xml">
-      <configuration name="AutomationTableTest.createObjectFromTableTest" configurationId="TestNG" />
+    <history-entry file="Alerts_simpleAlertTest - 2018.10.23 at 15h 20m 22s.xml">
+      <configuration name="Alerts.simpleAlertTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_selectWholeTableTest - 2018.10.21 at 15h 00m 13s.xml">
-      <configuration name="AutomationTableTest.selectWholeTableTest" configurationId="TestNG" />
+    <history-entry file="Alerts_simpleAlertTest - 2018.10.23 at 15h 22m 02s.xml">
+      <configuration name="Alerts.simpleAlertTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_printHeightTest - 2018.10.21 at 15h 06m 28s.xml">
-      <configuration name="AutomationTableTest.printHeightTest" configurationId="TestNG" />
+    <history-entry file="Alerts_simpleAlertTest - 2018.10.23 at 15h 22m 38s.xml">
+      <configuration name="Alerts.simpleAlertTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_printHeightTest - 2018.10.21 at 15h 07m 41s.xml">
-      <configuration name="AutomationTableTest.printHeightTest" configurationId="TestNG" />
+    <history-entry file="Alerts_confirmAlertTest - 2018.10.23 at 15h 33m 25s.xml">
+      <configuration name="Alerts.confirmAlertTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_printHeightTest - 2018.10.21 at 15h 08m 27s.xml">
-      <configuration name="AutomationTableTest.printHeightTest" configurationId="TestNG" />
+    <history-entry file="Alerts_confirmAlertTest - 2018.10.23 at 15h 34m 19s.xml">
+      <configuration name="Alerts.confirmAlertTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AutomationTableTest_printHeightTest - 2018.10.21 at 15h 10m 06s.xml">
-      <configuration name="AutomationTableTest.printHeightTest" configurationId="TestNG" />
+    <history-entry file="Alerts_confirmAlertTest - 2018.10.23 at 15h 35m 23s.xml">
+      <configuration name="Alerts.confirmAlertTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,8 +479,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19354838" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34750733" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38269794" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39442816" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -382,14 +505,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/AutomationTableTest.java</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/src/test/java/SwitchWindows.java</url>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/AutomationTableTest.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/test/java/Alerts.java</url>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -404,34 +527,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MenuPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="680">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AutomationTableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="49" column="99" selection-start-line="49" selection-start-column="99" selection-end-line="49" selection-end-column="99" />
+        <state relative-caret-position="782">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FormTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#2400#2401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SwitchWindows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Alerts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
           </folding>
         </state>
       </provider>
