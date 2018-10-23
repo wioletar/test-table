@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efcacf8e-fc9f-4e47-b4cd-01576bbf744f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Alerts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SwitchWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomationTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomationTableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Table.java" afterDir="false" />
-    </list>
+    <list default="true" id="efcacf8e-fc9f-4e47-b4cd-01576bbf744f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,12 +59,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1272" />
+          <entry key="java" value="1273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1272" />
+          <entry key="JAVA" value="1273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -144,25 +131,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Alerts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="104">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/By.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#1407#1408#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -329,7 +304,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540302024998" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540302401752" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjektyOdGrupy/ToolsQASelenium" />
   </component>
   <component name="RunDashboard">
@@ -344,12 +319,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Alerts.confirmAlertTest">
+  <component name="RunManager" selected="TestNG.Alerts.promptAlertTest">
     <configuration name="Alerts.confirmAlertTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PracticeAutomationForm" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Alerts" />
       <option name="METHOD_NAME" value="confirmAlertTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Alerts.promptAlertTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PracticeAutomationForm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Alerts" />
+      <option name="METHOD_NAME" value="promptAlertTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -393,32 +380,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwitchWindows.newMessageWindowTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PracticeAutomationForm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SwitchWindows" />
-      <option name="METHOD_NAME" value="newMessageWindowTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.SwitchWindows.newBrowserTabTest" />
-      <item itemvalue="TestNG.SwitchWindows.newMessageWindowTest" />
       <item itemvalue="TestNG.SwitchWindows.iFrameTest" />
       <item itemvalue="TestNG.Alerts.simpleAlertTest" />
       <item itemvalue="TestNG.Alerts.confirmAlertTest" />
+      <item itemvalue="TestNG.Alerts.promptAlertTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Alerts.promptAlertTest" />
         <item itemvalue="TestNG.Alerts.confirmAlertTest" />
         <item itemvalue="TestNG.Alerts.simpleAlertTest" />
         <item itemvalue="TestNG.SwitchWindows.iFrameTest" />
         <item itemvalue="TestNG.SwitchWindows.newBrowserTabTest" />
-        <item itemvalue="TestNG.SwitchWindows.newMessageWindowTest" />
       </list>
     </recent_temporary>
   </component>
@@ -469,6 +444,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -625,22 +601,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Alerts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#1407#1408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Alerts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

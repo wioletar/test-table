@@ -27,9 +27,10 @@ public class Alerts extends BaseTest {
         Alert alert2 = driver.switchTo().alert();
         alert2.dismiss();
     }
-    
+
     @Test
     public void promptAlertTest() {
+        driver.get("http://toolsqa.com/handling-alerts-using-selenium-webdriver/");
         WebElement button = driver.findElement(By.cssSelector("button[onClick='promptConfirm()']"));
         button.click();
 
