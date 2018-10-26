@@ -1,3 +1,5 @@
+package model;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -13,17 +15,15 @@ public class Table {
     private int rank;
 
 
-    public Table() {
-    }
 
-    public Table(WebElement tr) {
-        this.structure = tr.findElement(By.cssSelector("th")).getText();
-        List<WebElement> tds = tr.findElements(By.cssSelector("td"));
-        this.country = tds.get(0).getText();
-        this.city = tds.get(1).getText();
-        this.height = Integer.parseInt(tds.get(2).getText().substring(0,3));
-        this.built = Integer.parseInt(tds.get(3).getText());
-        this.rank = Integer.parseInt(tds.get(4).getText());
+    public Table(WebElement rowElements) {
+        this.structure = rowElements.findElement(By.cssSelector("th")).getText();
+        List<WebElement> rowElementsTd = rowElements.findElements(By.cssSelector("td"));
+        this.country = rowElementsTd.get(0).getText();
+        this.city = rowElementsTd.get(1).getText();
+        this.height = Integer.parseInt(rowElementsTd.get(2).getText().substring(0,3));
+        this.built = Integer.parseInt(rowElementsTd.get(3).getText());
+        this.rank = Integer.parseInt(rowElementsTd.get(4).getText());
     }
 
     public void printTable(){

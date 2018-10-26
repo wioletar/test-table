@@ -17,6 +17,7 @@ public class BaseTest {
         options.addArguments("start-maximized");
         options.addArguments("disable-extensions");
         driver = new ChromeDriver(options);
+        driver.get("http://toolsqa.com/");
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
 
