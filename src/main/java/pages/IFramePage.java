@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Arrays;
 
@@ -12,13 +14,12 @@ public class IFramePage extends BasePage {
     public IFramePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-        waitUntilElementsVisible();
     }
 
     @FindBy(css = "iframe[name='iframe1']")
-    private WebElement ifame1;
+    private WebElement ifamePracticeForm;
     @FindBy(css = "iframe[name='iframe2']")
-    private WebElement ifame2;
+    private WebElement ifameKnowledgeBase;
     @FindBy(css = "button[id='submit']")
     private WebElement submitButton;
     @FindBy(css = ".visible-xs")
@@ -26,16 +27,15 @@ public class IFramePage extends BasePage {
     @FindBy(css = ".main-nav .menu-item-home")
     private WebElement homeButton;
 
-    public void waitUntilElementsVisible(){
-        waitForElements(Arrays.asList(ifame1,ifame2,submitButton,readMoreButton,homeButton));
-    }
 
-    public IFramePage switchToFarme1(){
-        driver.switchTo().frame(ifame1);
+
+    public IFramePage switchToFramePracticeForm(){
+        waitForElements(Arrays.asList(ifamePracticeForm));
+        driver.switchTo().frame(ifamePracticeForm);
         return this;
     }
-    public IFramePage switchToFarme2(){
-        driver.switchTo().frame(ifame2);
+    public IFramePage switchToFrameKnowledgeBase(){
+        driver.switchTo().frame(ifameKnowledgeBase);
         return this;
     }
     public IFramePage clickToSubmitButton(){
@@ -46,11 +46,13 @@ public class IFramePage extends BasePage {
         readMoreButton.click();
         return this;
     }
-    public IFramePage switchToParentFarme(){
+    public IFramePage switchToParentFrame(){
         driver.switchTo().parentFrame();
         return this;
     }
     public void clickToHomeButton(){
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.elementToBeClickable(homeButton));
         homeButton.click();
     }
 }

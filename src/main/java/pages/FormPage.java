@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.ArrayList;
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -16,7 +15,6 @@ public class FormPage extends BasePage {
     public FormPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-        waitUntilElementsVisible();
     }
 
     @FindBy(css = "input[name='firstname']")
@@ -49,11 +47,9 @@ public class FormPage extends BasePage {
     @FindBy(id = "selenium_commands")
     private WebElement seleniumCommands;
 
-    public void waitUntilElementsVisible(){
-        waitForElements(Arrays.asList(firstNameInput,lastNameInput,button,uploadElement,dateInput,continents,seleniumCommands));
-    }
 
     public FormPage inputFirstName(String name){
+        waitForElements(Arrays.asList(firstNameInput));
         firstNameInput.sendKeys(name);
         return this;
     }
@@ -68,8 +64,10 @@ public class FormPage extends BasePage {
         return this;
     }
 
-    public FormPage uploadPhoto(String element){
-        uploadElement.sendKeys(element);
+    public FormPage uploadPhoto(){
+        File file = new File(getClass().getClassLoader().getResource("kwiaty.jpg").getFile());
+        uploadElement.sendKeys(file.getAbsolutePath());
+
         return this;
     }
 

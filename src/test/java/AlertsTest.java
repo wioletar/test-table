@@ -9,45 +9,40 @@ public class AlertsTest extends BaseTest {
     MenuPage menuPage;
     AlertsPage alertsPage;
 
+
     @BeforeMethod
     public void setup(){
         menuPage=new MenuPage(driver);
         alertsPage = new AlertsPage(driver);
+
+        menuPage.openDemoSitesMenu()
+                .openAlerts();
     }
 
     @Test
-    public void simpleAlertTest() throws InterruptedException {
-
-        menuPage.openDemoSitesMenu().openAlerts();
-        alertsPage.clickSimpleAlertButton().switchToAlert().acceptAlert();
+    public void simpleAlertTest() {
+        alertsPage.clickSimpleAlertButton()
+                .switchToAlert()
+                .acceptAlert();
     }
 
     @Test
     public void confirmAlertTest() {
-
-        menuPage.openDemoSitesMenu().openAlerts();
-        alertsPage.clickConfirmAlertButton().switchToAlert().acceptAlert().getConfirmAlertMessage()
-        .clickConfirmAlertButton().switchToAlert().dismissAlert().getConfirmAlertMessage();
-//        alertsPage.switchToAlert();
-//        alertsPage.acceptAlert();
-//        alertsPage.getConfirmAlertMessage();
-//        alertsPage.clickConfirmAlertButton();
-//        alertsPage.switchToAlert();
-//        alertsPage.dismissAlert();
-//        alertsPage.getConfirmAlertMessage();
-
+        alertsPage.clickConfirmAlertButton()
+                .switchToAlert()
+                .acceptAlert()
+                .getConfirmAlertMessage()
+                .clickConfirmAlertButton()
+                .switchToAlert()
+                .dismissAlert()
+                .getConfirmAlertMessage();
     }
 
     @Test
-    public void promptAlertTest() throws InterruptedException {
-
-        menuPage.openDemoSitesMenu().openAlerts();
-        alertsPage.clickPromptAlertButton();
-        alertsPage.switchToAlert();
-        alertsPage.sendMessageToAlert("Yes");
-        alertsPage.acceptAlert();
-
+    public void promptAlertTest() {
+       alertsPage.clickPromptAlertButton()
+               .switchToAlert()
+               .sendMessageToAlert("Yes")
+               .acceptAlert();
     }
-
-
 }

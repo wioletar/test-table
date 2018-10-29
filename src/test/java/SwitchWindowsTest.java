@@ -13,28 +13,37 @@ public class SwitchWindowsTest extends BaseTest {
     public void setup(){
         menuPage=new MenuPage(driver);
         switchWindowsPage = new SwitchWindowsPage(driver);
+        menuPage.openDemoSitesMenu()
+                .openSwitchWindows();
     }
 
     @Test
     public void newBrowserWindowTest() {
-        menuPage.openDemoSitesMenu().openSwitchWindows();
-        switchWindowsPage.clickNewBrowserWindowButton().switchToNewWindow(1);
+        switchWindowsPage.clickNewBrowserWindowButton()
+                        .switchToNewWindow(1);
         menuPage.openHomeFromMenu();
-        switchWindowsPage.closeWindow().switchToNewWindow(0).clickHomeMenuButton();
+        switchWindowsPage.closeWindow()
+                        .switchToNewWindow(0);
+        menuPage.openHomeFromMenu();
     }
 
     @Test
     public void newMessageWindowTest() {
-        menuPage.openDemoSitesMenu().openSwitchWindows();
-        switchWindowsPage.clickNewMessageWindowButton().switchToNewWindow(1).getNewMessageWindowText()
-        .closeWindow().switchToNewWindow(0).clickHomeMenuButton();
+        switchWindowsPage.clickNewMessageWindowButton()
+                        .switchToNewWindow(1)
+                        .getNewMessageWindowText()
+                        .closeWindow()
+                        .switchToNewWindow(0);
+        menuPage.openHomeFromMenu();
     }
 
     @Test
     public void newBrowserTabTest() {
-        menuPage.openDemoSitesMenu().openSwitchWindows();
-        switchWindowsPage.clickNewBrowserTabButton().switchToNewWindow(1);
+        switchWindowsPage.clickNewBrowserTabButton()
+                        .switchToNewWindow(1);
         menuPage.openHomeFromMenu();
-        switchWindowsPage.closeWindow().switchToNewWindow(0).clickHomeMenuButton();
+        switchWindowsPage.closeWindow()
+                        .switchToNewWindow(0);
+        menuPage.openHomeFromMenu();
     }
 }

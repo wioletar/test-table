@@ -14,24 +14,20 @@ public class TableTest extends BaseTest {
     public void setup(){
         menuPage=new MenuPage(driver);
         tablePage=new TablePage(driver);
+        menuPage.openDemoSitesMenu()
+                .openTable();
     }
 
     @Test
     public void createObjectFromTableTest() {
-        menuPage.openDemoSitesMenu();
-        menuPage.openTable();
-        tablePage.createObjectFromTable();
-        tablePage.printTableObjects();
-        tablePage.assertTable();
+        tablePage.createObjectFromTable()
+                .printTableObjects()
+                .assertTable();
     }
 
     @Test
     public void printHeightTest() {
-        menuPage.openDemoSitesMenu();
-        menuPage.openTable();
-        tablePage.createObjectFromTable();
-        tablePage.randomHeightNumber();
-        tablePage.printRandomStructureBuildings();
-
+        tablePage.createObjectFromTable()
+                .printRandomStructureBuildings();
     }
 }

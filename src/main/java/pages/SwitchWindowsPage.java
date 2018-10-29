@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -14,14 +14,10 @@ public class SwitchWindowsPage extends BasePage {
     public SwitchWindowsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-        waitUntilElementsVisible();
     }
 
     @FindBy(css = "button[onClick='newBrwWin()']")
     private WebElement newBrowserWindowButton;
-
-    @FindBy(css = ".main-nav .menu-item-home")
-    private WebElement homeMenuButton;
 
     @FindBy(css = "button[onClick='newMsgWin()']")
     private WebElement newMessageWindowButton;
@@ -32,25 +28,20 @@ public class SwitchWindowsPage extends BasePage {
     @FindBy(css = "body")
     private WebElement newMessageWindowText;
 
-    public void waitUntilElementsVisible(){
-        waitForElements(Arrays.asList(newBrowserWindowButton,homeMenuButton,newMessageWindowButton,newBrowserTabButton,newMessageWindowText));
-    }
-
     public SwitchWindowsPage clickNewBrowserWindowButton(){
+        waitForClickElement(newBrowserTabButton);
         newBrowserWindowButton.click();
         return this;
     }
 
-    public void clickHomeMenuButton(){
-        homeMenuButton.click();
-    }
-
     public SwitchWindowsPage clickNewBrowserTabButton(){
+        waitForClickElement(newBrowserTabButton);
         newBrowserTabButton.click();
         return this;
     }
 
     public SwitchWindowsPage clickNewMessageWindowButton(){
+        waitForClickElement(newMessageWindowButton);
         newMessageWindowButton.click();
         return this;
     }
@@ -73,6 +64,4 @@ public class SwitchWindowsPage extends BasePage {
         driver.close();
         return this;
     }
-
-
 }

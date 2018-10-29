@@ -1,16 +1,8 @@
 package pages;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 
 public class AlertsPage extends BasePage {
 
@@ -19,13 +11,12 @@ public class AlertsPage extends BasePage {
     public AlertsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-        waitUntilElementsVisible();
     }
 
     @FindBy(css = "button[onclick='pushAlert()']")
     private WebElement simpleAlertButton;
 
-    @FindBy(css = "button[onClick='pushConfirm()']")
+    @FindBy(xpath = "//button[@onclick='pushConfirm()']")
     private WebElement confirmAlertButton;
 
     @FindBy(css = "span[id='ConfirmOption']")
@@ -35,12 +26,13 @@ public class AlertsPage extends BasePage {
     private WebElement promptAlertButton;
 
     public AlertsPage clickSimpleAlertButton(){
+        waitForClickElement(simpleAlertButton);
         simpleAlertButton.click();
         return this;
     }
     public AlertsPage clickConfirmAlertButton(){
-        ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
-        confirmAlertButton.click();
+        waitForClickElement(confirmAlertButton);
+        confirmAlertButton.sendKeys(Keys.ENTER);
         return this;
     }
 
@@ -52,16 +44,19 @@ public class AlertsPage extends BasePage {
     }
 
     public AlertsPage clickPromptAlertButton(){
+        waitForClickElement(promptAlertButton);
         promptAlertButton.click();
         return this;
     }
 
     public AlertsPage switchToAlert(){
+        waitForAlert();
         alert=driver.switchTo().alert();
         return this;
     }
 
     public AlertsPage acceptAlert(){
+        waitForAlert();
         alert.accept();
         return this;
     }
@@ -74,9 +69,4 @@ public class AlertsPage extends BasePage {
         alert.sendKeys(text);
         return this;
     }
-
-    public void waitUntilElementsVisible(){
-        waitForElements(Arrays.asList(simpleAlertButton,confirmAlertButton,confirmAlertMessage,promptAlertButton));
-    }
-
 }

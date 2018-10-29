@@ -1,17 +1,11 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+
 
 public class MenuPage extends BasePage {
 
@@ -43,9 +37,8 @@ public class MenuPage extends BasePage {
     private WebElement iFarme;
 
     public void waitUntilElementsVisible(){
-        waitForElements(Arrays.asList(menuHome,menuDemoSites,form,table,alerts,switchWindows,iFarme));
+        waitForElements(Arrays.asList(menuHome,menuDemoSites));
     }
-
     public void openHomeFromMenu() {
         menuHome.click();
     }
@@ -54,20 +47,24 @@ public class MenuPage extends BasePage {
         return this;
     }
     public void openForm() {
+        waitForClickElement(form);
         form.click();
     }
     public void openTable() {
+        waitForClickElement(table);
         table.click();
     }
     public void openAlerts() {
+        waitForClickElement(alerts);
         alerts.click();
     }
     public void openSwitchWindows() {
+        waitForClickElement(switchWindows);
         switchWindows.click();
     }
     public void openiFrame() {
+        waitForClickElement(iFarme);
         iFarme.click();
     }
-
 
 }
